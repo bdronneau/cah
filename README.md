@@ -1,5 +1,7 @@
 # CAH - Card Against Humanity
 
+[![Build Status](https://travis-ci.com/bdronneau/cah.svg?branch=master)](https://travis-ci.com/bdronneau/cah) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=bdronneau_cah&metric=alert_status)](https://sonarcloud.io/dashboard?id=bdronneau_cah) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=bdronneau_cah&metric=code_smells)](https://sonarcloud.io/dashboard?id=bdronneau_cah) [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=bdronneau_cah&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=bdronneau_cah) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=bdronneau_cah&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=bdronneau_cah) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=bdronneau_cah&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=bdronneau_cah)
+
 I develop this open source game based on [Cards against Humanity](https://cardsagainsthumanity.com/) during COVID in order to try golang and vuejs together !
 
 ## Status
