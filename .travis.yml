@@ -1,0 +1,17 @@
+language: generic
+os: linux
+jobs:
+  include:
+    - language: generic
+      before_script:
+        - cd api/
+      script:
+        - docker build .
+
+    - language: node_js
+      node_js:
+        - "14"
+      before_script:
+        - cd front/
+      script:
+        - docker build .
