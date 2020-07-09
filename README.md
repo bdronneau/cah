@@ -23,6 +23,9 @@ If I give more love on this project ?
 - [front](./front/README.md)
 - [api](./api/README.md)
 
+## Hosting
+- [scripts/cah.yml](./scripts/cah.yml) contain a example with dummy password for deployment compatible with [deploy](https://github.com/ViBiOh/deploy) and [traefik](https://containo.us/traefik/)
+
 ## Credits
 
 Sources for cards
