@@ -19,7 +19,9 @@ If I give more love on this project ?
 - Add context logging
 - Add prometheus metrics
 - Limit the SPA scope to game part and make golang templates for lobby, home, room creation ...
+- Introduce WebSockets
 - Include unit tests and cypress
+- Give some love in the UI
 
 ## Usage
 - [front](./front/README.md)

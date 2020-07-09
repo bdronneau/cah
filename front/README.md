@@ -1,5 +1,17 @@
 # CAH - VueJS
 
+## Features
+- `/rooms` allow to create room
+- UserID is stored in localstorage
+
+
+## How to play
+
+One player go to `/rooms` create a room and give ID to other users
+Everybody join through `/`.
+One player `start the party`, other players will see `enter in party` 10 seconds.
+First player to get 10 selected cards end the game.
+
 ## Develop
 
 You need to install node stuff with
