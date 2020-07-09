@@ -1,0 +1,16 @@
+---
+
+jobs:
+  include:
+    - stage: Build
+      sudo: required
+      language: minimal
+      services:
+        - docker
+      script: docker build .
+
+stages:
+  - Build
+
+notifications:
+  email: false

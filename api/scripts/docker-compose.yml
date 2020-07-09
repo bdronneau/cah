@@ -1,0 +1,17 @@
+version: '2.4'
+
+services:
+  postgres:
+    image: postgres:11-alpine
+    # command: ["postgres", "-c", "log_statement=all"]
+    ports:
+      - "45432:5432"
+    volumes:
+      - pg11-cah:/var/lib/postgresql/data
+      - ${PWD}/scripts/sql:/docker-entrypoint-initdb.d
+    environment:
+      - POSTGRES_PASSWORD=testingOnLocal1234
+      - POSTGRES_USER=cah
+
+volumes:
+  pg11-cah:

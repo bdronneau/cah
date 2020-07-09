@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserHand.vue should have a custom title and match snapshot 1`] = `
+<div class="container">
+  <div class="v-data-table elevation-1 theme--light">
+    <div class="v-data-table__wrapper">
+      <table>
+        <colgroup>
+          <col class="">
+          <col class="">
+          <col class="">
+        </colgroup>
+        <thead class="v-data-table-header">
+          <tr>
+            <th role="columnheader" scope="col" aria-label="" class="text-start" style="width: 1px; min-width: 1px;"><span></span></th>
+            <th role="columnheader" scope="col" aria-label="id: Not sorted. Activate to sort ascending." aria-sort="none" class="text-start sortable"><span>id</span><i aria-hidden="true" class="v-icon notranslate v-data-table-header__icon mdi mdi-arrow-up theme--light" style="font-size: 18px;"></i></th>
+            <th role="columnheader" scope="col" aria-label="Name: Not sorted. Activate to sort ascending." aria-sort="none" class="text-start sortable"><span>Name</span><i aria-hidden="true" class="v-icon notranslate v-data-table-header__icon mdi mdi-arrow-up theme--light" style="font-size: 18px;"></i></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="">
+            <td class="text-start">
+              <div class="v-data-table__checkbox v-simple-checkbox">
+                <div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i>
+              </div>
+            </td>
+            <td class="text-start">1</td>
+            <td class="text-start">Card 1</td>
+          </tr>
+          <tr class="">
+            <td class="text-start">
+              <div class="v-data-table__checkbox v-simple-checkbox">
+                <div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i>
+              </div>
+            </td>
+            <td class="text-start">2</td>
+            <td class="text-start">Card 2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div> <button type="button" disabled="disabled" class="v-btn v-btn--contained v-btn--disabled theme--light v-size--default"><span class="v-btn__content">Confirm</span></button> <button type="button" class="v-btn v-btn--flat v-btn--text theme--light v-size--default"><span class="v-btn__content">Reset</span></button>
+</div>
+`;

@@ -1,0 +1,46 @@
+version: '2.4'
+
+services:
+  api:
+    image: bdronneau/cah:api-dev
+    environment:
+      - CAH_DB_PASSWORD=testingOnLocal1234
+      - CAH_DB_USER=cah
+      - CAH_DB_HOST=postgres
+      - CAH_HTTP_CORS=https://cah.bast-factory.ovh
+    labels:
+      traefik.http.routers.cah-api-http.rule: Host(`api-cah.bast-factory.ovh`)
+      traefik.http.routers.cah-api-http.entrypoints: http
+      traefik.http.routers.cah-api-http.middlewares: redirect@file
+      traefik.http.routers.cah-api-https.rule: Host(`api-cah.bast-factory.ovh`)
+      traefik.http.routers.cah-api-https.middlewares: compress@file
+      traefik.http.routers.cah-api-https.entrypoints: https
+      traefik.http.routers.cah-api-https.tls: true
+      traefik.http.routers.cah-api-https.tls.certresolver: default
+      traefik.http.services.cah-api-service.loadbalancer.server.port: "1324"
+  front:
+    image: bdronneau/cah:front-dev
+    entrypoint: ["/viws", "-spa"]
+    environment:
+      - VIWS_CSP=default "default-src '*.bast-factory.ovh'; base-uri 'self'"
+    labels:
+      traefik.http.routers.cah-front-http.rule: Host(`cah.bast-factory.ovh`)
+      traefik.http.routers.cah-front-http.entrypoints: http
+      traefik.http.routers.cah-front-http.middlewares: redirect@file
+      traefik.http.routers.cah-front-https.rule: Host(`cah.bast-factory.ovh`)
+      traefik.http.routers.cah-front-https.middlewares: compress@file
+      traefik.http.routers.cah-front-https.entrypoints: https
+      traefik.http.routers.cah-front-https.tls: true
+      traefik.http.routers.cah-front-https.tls.certresolver: default
+      traefik.http.services.cah-front-service.loadbalancer.server.port: "1080"
+
+  postgres:
+    image: postgres:11-alpine
+    volumes:
+      - pg11-cah:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=testingOnLocal1234
+      - POSTGRES_USER=cah
+
+volumes:
+  pg11-cah:

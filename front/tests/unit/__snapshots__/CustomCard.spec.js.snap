@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomCard.vue should have a custom title and match snapshot 1`] = `
+<div class="v-card v-sheet theme--light">
+  <div class="v-card__title"><span>Foobar</span>
+    <div class="spacer"></div> <button type="button" class="v-btn v-btn--contained theme--light v-size--default"><span class="v-btn__content">
+      Action
+    </span></button>
+  </div>
+  <div class="v-card__text"></div>
+</div>
+`;
