@@ -17,7 +17,7 @@
     "vue": "^2.6.11",
     "vue-router": "^3.3.4",
     "vuejs-logger": "^1.5.4",
-    "vuetify": "^2.3.4",
+    "vuetify": "^2.3.6",
     "vuex": "^3.5.1"
   },
   "devDependencies": {
