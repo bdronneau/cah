@@ -11,5 +11,5 @@ require (
 	github.com/peterbourgon/ff v1.7.0
 	github.com/sirupsen/logrus v1.6.0
 	github.com/valyala/fasttemplate v1.1.0 // indirect
-	go.uber.org/zap v1.15.0
+	go.uber.org/zap v1.16.0
 )
