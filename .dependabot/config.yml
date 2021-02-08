@@ -6,7 +6,7 @@ update_configs:
     automerged_updates:
       - match:
           dependency_type: "all"
-          update_type: "security"
+          update_type: "security:patch"
     directory: "/api"
     update_schedule: "weekly"
     commit_message:
@@ -16,7 +16,7 @@ update_configs:
     automerged_updates:
       - match:
           dependency_type: "all"
-          update_type: "security"
+          update_type: "security:patch"
     directory: "/front"
     update_schedule: "weekly"
     commit_message:
